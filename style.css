@@ -25,8 +25,15 @@ header {
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-direction: column;
 
 }
+
+button {
+margin-bottom: 4vh;
+margin-top: 4vh;
+}
+
 
 footer {
     height: 10vh;
@@ -51,6 +58,7 @@ footer {
     background-color: white;
     grid-template-rows: repeat(3, 10fr);
     grid-template-columns: repeat(3, 10fr);
+    margin-bottom: 6vh;
   }
   
   .block {
@@ -58,8 +66,11 @@ footer {
     text-align: center;
     color: #ddd;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    font-size: 88px;
     
   
     
