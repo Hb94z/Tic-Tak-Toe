@@ -138,17 +138,3 @@ let gameBoardLogic = (() => {
   let player2 = Player('player two', "O");
 
 })();
-
-
-
-
-
-
-
-
-// add a check for a winner with if statements. when one is picked, display who won(player1 or 2),
-//then on the next click reset the entire board, or remove vent listener so player 
-//is forced to click play again(change reset text content to play agin)
-
-//use modal for this?
-
