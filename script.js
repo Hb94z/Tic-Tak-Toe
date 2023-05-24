@@ -3,7 +3,7 @@ let gameBoardLogic = (() => {
   let boxes = [...mainBoard.querySelectorAll('.block')];
   let disp = document.getElementById("winner");
   let btn = document.getElementById("reset");
-  let counter = 0;
+ 
   
   let gameBoard =  (() => {
     let board = ["", "", "", "", "", "", "", "", ""];
@@ -11,6 +11,7 @@ let gameBoardLogic = (() => {
     return {board};
   })();
 
+  let counter = 0;
   boxes.forEach((element) => {
     element.onclick = () => {
  
@@ -19,12 +20,12 @@ let gameBoardLogic = (() => {
       if (winner == "The winner is X" || winner == "The winner is O") {
         console.log("gameover")
         return
-      }
-       
+
+      }    
       else if (element.innerHTML!= "") {
         return
-      }
 
+      }
       else if (counter % 2 == 0) {
         gameBoard.board[parseInt(id)] = player1.sign;
         element.innerHTML = gameBoard.board[parseInt(id)];
@@ -106,7 +107,6 @@ let gameBoardLogic = (() => {
    
       })();
     }
-    
   
   }); 
 
@@ -121,6 +121,7 @@ let gameBoardLogic = (() => {
         element.innerHTML = "";
         disp.innerHTML = "";
         btn.innerHTML = "Reset";
+        winner = null;
         
       })
     
